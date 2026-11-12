@@ -1,0 +1,47 @@
+name: ahorrant_web
+description: "Ahorrant Web - Finanzas personales gamificadas para universitarios (version web)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino icons icons.
+  cupertino_icons: ^1.0.6
+
+  # Plugins utilizados en el proyecto
+  http: ^1.2.0         # Para peticiones HTTP al backend
+  shared_preferences: ^2.2.2  # Almacenamiento local (localStorage en web)
+  sqflite: ^2.2.4      # Base de datos SQLite local
+  sqflite_common_ffi_web: ^1.0.0  # SQLite sobre IndexedDB (solo web)
+  path: ^1.9.0         # Manipulación de rutas de archivos y bd
+
+  # Fuentes divertidas
+  google_fonts: ^6.2.1
+
+  # Apertura de links externos (videos de YouTube)
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/hormiguita.png
+    - assets/prendas/Hormiga_sin_prendas.png
+    - assets/prendas/Hormiga_con_gorra.png
+    - assets/prendas/Hormiga_con_lentes.png
+    - assets/prendas/Hormiga_con_mochila.png
+    - assets/prendas/Hormiga_lentes_gorra.png
+    - assets/prendas/Hormiga_mochila_gorra.png
+    - assets/prendas/Hormiga_mochila_lentes.png
+    - assets/prendas/Hormiga_lentes_gorra_mochila.png
